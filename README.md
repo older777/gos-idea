@@ -1,5 +1,4 @@
-#Тестовое задание для Гостиничные Идеи, hotel-ideas.ru
-
+# Тестовое задание для Гостиничные Идеи, hotel-ideas.ru
 
 
 >Представь, что ты дорабатываешь ядро BookingCore. Нужно добавить простой функционал бронирования охотничьих туров с выбором гида.
@@ -50,7 +49,7 @@
 
 >	1–2 часа (в комфортном темпе).
 
-###GosIdea, пакет для Laravel 12
+### GosIdea, пакет для Laravel 12
 
 Автор Минхаеров А.
 
@@ -66,7 +65,7 @@
 
 В Composer выполнить команду установки пакета:
 
-	composer require older777/gos-idea
+	composer require older777/gos-idea:"dev-main"
 
 Выполнить публикацию
 
@@ -121,4 +120,4 @@
 
 	./vendor/bin/phpunit
 
-Будет выполнен тест из файла *HuntingBookingRequestTest*, сообщение PHPUnit ***OK (4 tests, 1 assertion)*** в случае успешного тестирования.
+Будет выполнен тест из файла *HuntingBookingRequestTest*, сообщение PHPUnit *OK (4 tests, 1 assertion)* в случае успешного тестирования.
