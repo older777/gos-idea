@@ -1,0 +1,39 @@
+{
+	"name" : "older777/gos-idea",
+	"description" : "Тестовое задание для Гостиничные идеи, ядро BookingCore",
+	"version" : "1.0.0",
+	"type" : "project",
+	"require" : {
+		"illuminate/support": "*",
+		"laravel/framework": "^12.0",
+		"phpunit/phpunit": "^11.5"
+	},
+	"require-dev" : {
+		"laravel/pint" : "dev-main"
+	},
+	"license" : "OPL-1.0",
+	"autoload" : {
+		"psr-4" : {
+			"Older777\\GosIdea\\" : "src/"
+		}
+	},
+	"authors" : [{
+			"name" : "older777",
+			"email" : "kkkart@mail.ru"
+		}
+	],
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+	"config" : {
+		"sort-packages" : true,
+		"preferred-install" : "dist",
+		"optimize-autoloader" : true
+	},
+	"extra" : {
+		"laravel" : {
+			"providers" : [
+				"Older777\\GosIdea\\Providers\\GosIdeaServiceProvider"
+			]
+		}
+	}
+}
