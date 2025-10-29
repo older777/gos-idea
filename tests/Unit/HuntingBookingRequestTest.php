@@ -3,7 +3,6 @@
 namespace Older777\GosIdea\Tests\Unit;
 
 use Illuminate\Filesystem\Filesystem;
-use Illuminate\Routing\Route;
 use Illuminate\Translation\FileLoader;
 use Illuminate\Translation\Translator;
 use Illuminate\Validation\Factory;
@@ -55,7 +54,6 @@ class HuntingBookingRequestTest extends TestCase
         $request->setContainer(app());
         $validationFactory = new Factory(new Translator(new FileLoader(new Filesystem, 'lang'), 'en'));
         $validationFactory->setContainer(app());
-        $route = new Route(['get'], $request->getUri(), $request->getMethod());
         $rules = [
             'min_experience' => 'integer|max:100',
         ];
