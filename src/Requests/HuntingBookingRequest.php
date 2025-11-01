@@ -6,6 +6,7 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class HuntingBookingRequest extends FormRequest
 {
@@ -47,6 +48,6 @@ class HuntingBookingRequest extends FormRequest
             'success' => false,
             'message' => 'Ошибка валидации!',
             'errors' => $validator->errors(),
-        ], 422));
+        ], Response::HTTP_UNPROCESSABLE_ENTITY, [], JSON_UNESCAPED_UNICODE));
     }
 }
